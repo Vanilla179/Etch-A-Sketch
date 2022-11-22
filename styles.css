@@ -1,0 +1,31 @@
+.container {
+  width: 500px;
+  height: 500px;
+  background-color: var(--secondary-light);
+  box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+  display: flex;
+}
+
+.row {
+  width: 25px;
+  height: 25px;
+  float: left;
+
+  flex-basis: 0;
+}
+
+.column {
+  float: left;
+  width: 25px;
+  height: 25px;
+  outline: 1px solid;
+  outline-color: black;
+
+  flex-basis: 0;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
