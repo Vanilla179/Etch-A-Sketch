@@ -1,31 +1,54 @@
 .container {
   width: 500px;
   height: 500px;
-  background-color: var(--secondary-light);
+  background-color: #ededed;
   box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
   display: flex;
 }
 
 .row {
-  width: 25px;
-  height: 25px;
-  float: left;
-
-  flex-basis: 0;
+  /* border: 1px rgba(0, 0, 0, 0.041) solid; */
+  display: flex;
+  flex: 1;
+  flex-direction: column;
 }
 
 .column {
-  float: left;
-  width: 25px;
-  height: 25px;
-  outline: 1px solid;
-  outline-color: black;
-
-  flex-basis: 0;
+  flex: 1;
 }
 
 .wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+button {
+  margin-top: 10px;
+  border-radius: 5px;
+  line-height: 1.1em;
+  font-size: 1.1em;
+  color: #ededed;
+  cursor: pointer;
+  outline: none;
+  transition: 0.5s;
+  background: linear-gradient(#0000, rgb(0 0 0/40%)) top/100% 800%;
+  background-color: #333;
+}
+
+button:hover {
+  background-position: bottom;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
 }
