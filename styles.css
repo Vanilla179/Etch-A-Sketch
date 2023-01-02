@@ -11,8 +11,14 @@ body {
   display: flex;
 }
 
+.grid {
+  border: 1px solid black;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
 .row {
-  /* border: 1px rgba(0, 0, 0, 0.041) solid; */
   display: flex;
   flex: 1;
   flex-direction: column;

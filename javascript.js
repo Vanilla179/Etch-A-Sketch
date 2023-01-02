@@ -5,6 +5,7 @@ const btn1 = document.querySelector(".size");
 const btn2 = document.querySelector(".pen");
 const btn3 = document.querySelector(".eraser");
 const btn4 = document.querySelector(".clear");
+const btn5 = document.querySelector(".GridLines");
 
 // Function to create a grid of divs based on user input
 function makeDiv() {
@@ -52,6 +53,9 @@ function eraseColor(div2) {
 function Clear(div2) {
   div2.setAttribute("style", " background: #ededed; ");
 }
+function gridLines(div2) {
+  div2.classList.toggle("grid");
+}
 
 // Button to create a new grid
 btn1.addEventListener("click", function () {
@@ -77,4 +81,9 @@ btn4.addEventListener("click", function () {
   // Select all columns and erase color on mouseover
   const div4Elements = document.querySelectorAll(".column");
   div4Elements.forEach((div2) => Clear(div2));
+});
+
+btn5.addEventListener("click", function () {
+  const div5Elements = document.querySelectorAll(".column");
+  div5Elements.forEach((div2) => gridLines(div2));
 });
